@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-introduce {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  /* background-color: #ffe4c460; */
+}
+.name-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interest-con {
+  display: flex;
+  flex-direction: column;
+}
+.typed-text {
+  font-size: 2.25rem;
+  color: limegreen;
+  position: relative;
+  top: -1rem;
+}
+
+.education-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.image {
+  object-fit: cover;
+  width: 350px;
+  height: 100px;
+}
+.place-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.computer {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+.light {
+  font-weight: 200;
+}
+.large {
+  font-size: 4.5rem;
+}
+.medium-size {
+  font-size: 3rem;
+}
+.small {
+  font-size: 2.5rem;
+}
+
+.appear-animation {
+  animation: appear;
+  animation-timeline: view();
+  animation-fill-mode: both;
+  animation-duration: 1ms;
+}
+
+@media screen and (max-width: 768px) {
+  .large {
+    font-size: 3.75rem;
+  }
+  .medium-size {
+    font-size: 2rem;
+  }
+  .small {
+    font-size: 1.75rem;
+  }
+
+  .typed-text {
+    font-size: 1.5rem;
+  }
+  .computer{
+    width: 500px;
+  }
+  .image {
+    object-fit: cover;
+    width: 300px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .typed-text {
+    font-size: 2rem;
+  }
+  .computer {
+    width: 650px;
+    padding-top: 1.5rem;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
